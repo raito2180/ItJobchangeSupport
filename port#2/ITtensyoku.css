@@ -1,0 +1,16 @@
+@charset "utf-8";
+body {
+    
+    background-image: url("背景.jpg");
+    background-size: cover;
+}
+
+.title{
+font-size: 30px;
+}
+.haiti1{
+    padding:100px ;
+    display:flex;
+    justify-content:center;
+
+}
