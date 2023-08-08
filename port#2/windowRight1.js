@@ -9,22 +9,22 @@ while (btnIndex < btnTitle.length){
 }
 
 //ques.htmlを別ウィンドウに呼び出す関数を定義
-const question = () => {
+const questionJob = () => {
   window.open("ques.html");
   console.log("ques.html");
 }
 //目標再設定を押したときにquestion関数を呼び出す
   $button[0].addEventListener ("click",e => {
-    question(e);
+    questionJob(e);
   }) 
 
-//クリックしたときにページが印刷される関数を定義
-const listPrint = () => {
-  window.print();
-}
-//印刷を押したときにlistPrint関数を呼び出す
+//印刷を押したときに印刷画面を呼び出す
   $button[1].addEventListener ("click",e => {
-    listPrint(e);
+    window.print(e);
   }) 
 
+//戻るを押したときにTop画面に戻る
+  $button[3].addEventListener ("click",e => {
+  window.history.back(e);
+}) 
 
