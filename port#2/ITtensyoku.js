@@ -1,5 +1,5 @@
 //題名を反映
-const ITtitle = "ITエンジニア転職 情報整理リスト";
+const ITtitle = "ITエンジニア転職支援システム";
 document.getElementById("ITtensyoku").textContent = ITtitle;
 
 const btnTitle = ["情報リスト作成","情報リスト管理"];
