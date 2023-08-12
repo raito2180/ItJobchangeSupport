@@ -4,58 +4,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ITtensyoku</title>
-    <link rel="stylesheet" type="text/css" href="" />
+    <link rel="stylesheet" type="text/css" href="ques.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">    
   </head>
   <body>  
     <table ID="goal">
       <tr>
           <th><label>業務形態:</label></th>
-          <td id="businessForm"><input type=text></td>
+          <td><span id="businessForm"></span></td>
           <th><label>職種:</label></th>
-          <td><input id="jobForm" type=text></td>
+          <td><span id="jobForm"></span></td>
       </tr>
+    <table>
+      <h2>希望の業務形態を選択してください※複数回答不可※</h2>
+        <input type="checkbox" id="SI" name="business" value="SIer">
+        <span for="SI">SIer</span>
+        <input type="checkbox" id="con" name="business" value="受託開発">
+        <span for="con">受託開発</span>
+        <input type="checkbox" id="house" name="business" value="自社開発">
+        <span for="house">自社開発</span>
+        <input type="checkbox" id="houseSE" name="business" value="社内SE">
+        <span for="houseSE">社内SE</span>
+        <input type="checkbox" id="SES" name="business" value="SES">
+        <span for="SES">SES</span>
     </table>
-      <p>目指したい職種を選択してください</p>
+    </table>
+      <h2>目指したい職種を選択してください※複数回答不可※</h2>
         <input type="checkbox" id="ITarc" name="job" value="ITアーキテクト">
-        <label for="ITarc">ITアーキテクト</label>
+        <span for="ITarc">ITアーキテクト</span>
         <input type="checkbox" id="ITcon" name="job" value="ITコンサルタント">
-        <label for="ITcon">ITコンサルタント</label>
+        <span for="ITcon">ITコンサルタント</span>
         <input type="checkbox" id="AIang" name="job" value="AIエンジニア">
-        <label for="AIang">AIエンジニア</label>
+        <span for="AIang">AIエンジニア</span>
         <input type="checkbox" id="PM" name="job" value="プロジェクトマネージャー">
-        <label for="PM">プロジェクトマネージャー</label>
+        <span for="PM">プロジェクトマネージャー</span>
         <input type="checkbox" id="web3" name="job" value="web3.0エンジニア">
-        <label for="web3">web3.0エンジニア</label>
+        <span for="web3">web3.0エンジニア</span>
         <input type="checkbox" id="front" name="job" value="フロントエンドエンジニア">
-        <label for="front">フロントエンドエンジニア</label>
+        <span for="front">フロントエンドエンジニア</span>
         <input type="checkbox" id="back" name="job" value="バックエンドエンジニア">
-        <label for="back">バックエンドエンジニア</label>
+        <span for="back">バックエンドエンジニア</span>
         <input type="checkbox" id="infra" name="job" value="インフラエンジニア">
-        <label for="infra">インフラエンジニア</label>
+        <span for="infra">インフラエンジニア</span>
         <input type="checkbox" id="cloud" name="job" value="クラウドエンジニア">
-        <label for="cloud">クラウドエンジニア</label>
+        <span for="cloud">クラウドエンジニア</span>
         <input type="checkbox" id="system" name="job" value="システムエンジニア">
-        <label for="system">システムエンジニア</label>
+        <span for="system">システムエンジニア</span>
         <input type="checkbox" id="inhouse" name="job" value="社内SE">
-        <label for="inhouse">社内SE</label>
+        <span for="inhouse">社内SE</span>
         <input type="checkbox" id="sec" name="job" value="セキュリティエンジニア">
-        <label for="sec">セキュリティエンジニア</label>
+        <span for="sec">セキュリティエンジニア</span>
         <input type="checkbox" id="sales" name="job" value="セールスエンジニア">
-        <label for="sales">セールスエンジニア</label>
+        <span for="sales">セールスエンジニア</span>
         <input type="checkbox" id="data" name="job" value="データベースエンジニア">
-        <label for="data">データベースエンジニア</label>
+        <span for="data">データベースエンジニア</span>
         <input type="checkbox" id="datasci" name="job" value="データサイエンティスト">
-        <label for="datasci">データサイエンティスト</label>
+        <span for="datasci">データサイエンティスト</span>
         <input type="checkbox" id="field" name="job" value="フィールドエンジニア">
-        <label for="field">フィールドエンジニア</label>
+        <span for="field">フィールドエンジニア</span>
         <input type="checkbox" id="PG" name="job" value="プログラマー">
-        <label for="PG">プログラマー</label>
+        <span for="PG">プログラマー</span>
         <input type="checkbox" id="mobile" name="job" value="モバイルエンジニア">
-        <label for="sec">モバイルエンジニア</label>
+        <span for="sec">モバイルエンジニア</span>
     </div>
     <br>
-    <button id="job" type="button" class="btn btn-primary">Primary</button>
+    <button onclick="getValue()" id="job" type="button" class="btn btn-primary">Primary</button>
     <script src="ques.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
   </body>
