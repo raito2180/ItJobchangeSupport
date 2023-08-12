@@ -8,20 +8,73 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">    
   </head>
   <body>  
-    <a href="ques.html"></a>
-    <table ID="goal">
-      <tr>
-        <th><label>業務形態:</label></th>
-        <td><span id="businessForm"></span></td>
-        <th><label>職種:</label></th>
-        <td><span id="jobForm"></span></td>
-      </tr>
-    </table>
+
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary ">Secondary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
-
+    <div ID="goal">
+      <table>
+        <tr>
+          <th><label>業務形態:</label></th>
+          <td><span id="businessForm"></span></td>
+          <th><label>職種:</label></th>
+          <td><span id="jobForm"></span></td>
+        </tr>
+      </table>
+      <div ID="ques" class="hidden">
+    <h2>希望の業務形態を選択してください※複数回答不可※</h2>
+        <input type="checkbox" id="SI" name="business" value="SIer">
+        <span for="SI">SIer</span>
+        <input type="checkbox" id="con" name="business" value="受託開発">
+        <span for="con">受託開発</span>
+        <input type="checkbox" id="house" name="business" value="自社開発">
+        <span for="house">自社開発</span>
+        <input type="checkbox" id="houseSE" name="business" value="社内SE">
+        <span for="houseSE">社内SE</span>
+        <input type="checkbox" id="SES" name="business" value="SES">
+        <span for="SES">SES</span>
+      <h2>目指したい職種を選択してください※複数回答不可※</h2>
+        <input type="checkbox" id="ITarc" name="job" value="ITアーキテクト">
+        <span for="ITarc">ITアーキテクト</span>
+        <input type="checkbox" id="ITcon" name="job" value="ITコンサルタント">
+        <span for="ITcon">ITコンサルタント</span>
+        <input type="checkbox" id="AIang" name="job" value="AIエンジニア">
+        <span for="AIang">AIエンジニア</span>
+        <input type="checkbox" id="PM" name="job" value="プロジェクトマネージャー">
+        <span for="PM">プロジェクトマネージャー</span>
+        <input type="checkbox" id="web3" name="job" value="web3.0エンジニア">
+        <span for="web3">web3.0エンジニア</span>
+        <input type="checkbox" id="front" name="job" value="フロントエンドエンジニア">
+        <span for="front">フロントエンドエンジニア</span>
+        <input type="checkbox" id="back" name="job" value="バックエンドエンジニア">
+        <span for="back">バックエンドエンジニア</span>
+        <input type="checkbox" id="infra" name="job" value="インフラエンジニア">
+        <span for="infra">インフラエンジニア</span>
+        <input type="checkbox" id="cloud" name="job" value="クラウドエンジニア">
+        <span for="cloud">クラウドエンジニア</span>
+        <input type="checkbox" id="system" name="job" value="システムエンジニア">
+        <span for="system">システムエンジニア</span>
+        <input type="checkbox" id="inhouse" name="job" value="社内SE">
+        <span for="inhouse">社内SE</span>
+        <input type="checkbox" id="sec" name="job" value="セキュリティエンジニア">
+        <span for="sec">セキュリティエンジニア</span>
+        <input type="checkbox" id="sales" name="job" value="セールスエンジニア">
+        <span for="sales">セールスエンジニア</span>
+        <input type="checkbox" id="data" name="job" value="データベースエンジニア">
+        <span for="data">データベースエンジニア</span>
+        <input type="checkbox" id="datasci" name="job" value="データサイエンティスト">
+        <span for="datasci">データサイエンティスト</span>
+        <input type="checkbox" id="field" name="job" value="フィールドエンジニア">
+        <span for="field">フィールドエンジニア</span>
+        <input type="checkbox" id="PG" name="job" value="プログラマー">
+        <span for="PG">プログラマー</span>
+        <input type="checkbox" id="mobile" name="job" value="モバイルエンジニア">
+        <span for="sec">モバイルエンジニア</span>
+    <br>
+    <button onclick="getValue()" id="job" type="button" class="btn btn-primary ">Primary</button>
+      </div>  
+      </div>
     <script src="ITtensyoku2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
   </body>
