@@ -7,3 +7,16 @@ td{
 .hidden{
   display: none;
 }
+
+.motive{
+  height: 20vh;
+  width: 50vh;
+}
+.reason{
+  height: 20vh;
+  width: 50vh;
+}
+.point{
+  height: 20vh;
+  width: 50vh;
+}
